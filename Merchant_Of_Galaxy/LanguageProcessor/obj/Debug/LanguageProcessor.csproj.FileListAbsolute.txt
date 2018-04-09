@@ -1,0 +1,4 @@
+C:\Users\papatida\documents\visual studio 2015\Projects\merchants_of_the_galaxy\LanguageProcessor\bin\Debug\LanguageProcessor.dll
+C:\Users\papatida\documents\visual studio 2015\Projects\merchants_of_the_galaxy\LanguageProcessor\bin\Debug\LanguageProcessor.pdb
+C:\Users\papatida\documents\visual studio 2015\Projects\merchants_of_the_galaxy\LanguageProcessor\obj\Debug\LanguageProcessor.dll
+C:\Users\papatida\documents\visual studio 2015\Projects\merchants_of_the_galaxy\LanguageProcessor\obj\Debug\LanguageProcessor.pdb

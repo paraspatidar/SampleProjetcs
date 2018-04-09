@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Query>
+  <QueryType>
+    <QueryRegEx Name="DECLARATIONQUERY" RegEx="^([A-Za-z]+) is ([I|V|X|L|C|D|M])$" Sample="A is I"/>
+    <QueryRegEx Name="CALCULATIVEDECLARATIVEQUERY" RegEx="(.*) is ([0-9]+) ([c|C]redits)$" Sample="A B Gold is 100 Credits"/>
+    <QueryRegEx Name="CREDITQUERY" RegEx="^how many [C|c]redits is .*?$" Sample=" "/>
+    <QueryRegEx Name="QUNATITIVEQUERY" RegEx="^how much is .*?$" Sample="how much is A A C D ?"/>
+  </QueryType>
+  <QueryParts>
+    <Qpart Name="DECLARATIONQUERY" ArrayLengthMinimum="3" ArrayKeyPartFromEnd="3" ArrayValuePartFromEnd="1"/>
+    <Qpart Name="CALCULATIVEDECLARATIVEQUERY" ArrayLengthMinimum="6" ArrayKeyPartFromEnd="4" ArrayValuePartFromEnd="2" CalculativeIndexRangeStart="1" CalculativeIndexRangeEnd="-4"/>
+    <Qpart Name="CREDITQUERY" ArrayLengthMinimum="8" ArrayKeyPartFromEnd="2"  CalculativeIndexRangeStart="5" CalculativeIndexRangeEnd="-2"/>
+    <Qpart Name="QUNATITIVEQUERY" ArrayLengthMinimum="8" CalculativeIndexRangeStart="4" CalculativeIndexRangeEnd="-1"/>
+  </QueryParts>
+</Query>
